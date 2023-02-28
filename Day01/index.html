@@ -34,8 +34,9 @@
         <a href="https://www.facebook.com/profile.php?id=100014149143164" class="customURL">nhấn vào đây
         </a>để tới trang facebook của tôi
     </p>
-    <p><b class ="Avatar">Avatar của tài khoản F8: </b></p> <img src="https://files.fullstack.edu.vn/f8-prod/user_photos/297005/63f48cfecf162.jpg"/>
-    
+    <p><b class="Avatar">Avatar của tài khoản F8: </b></p>
+    <img width="11%" src="https://files.fullstack.edu.vn/f8-prod/user_photos/297005/63f48cfecf162.jpg" />
+
     <!--Các dùng thẻ ul,li-->
     <p>Các ngôn ngữ mà trình duyệt web có thể hiểu:</p>
     <ul>
@@ -51,6 +52,42 @@
         <li><b>CSS</b></li>
         <li><b>Javascript</b></li>
     </ol>
+
+    <p class="table">
+        <!-- Class table ảnh hưởng đến tất cả các nội dung
+        trong thẻ p nên khi set green thì sẽ ảnh hưởng đến tất cả các thẻ hay nội dung trong thẻ p.
+        Nhưng vì class ProductList tiếp tục set color cho văn bản bên trong thẻ của nó nên cuối cùng 
+        văn bản trong thẻ b sẽ được set color là green-->
+        <b class="ProductList">Danh sách sản phẩm</b>
+        (test tạo bảng):
+    </p>
+
+    <!--cấu trúc tạo bảng-->
+    <table>
+        <tr>
+            <th>Mã sản phẩm</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+        </tr>
+        <tr>
+            <td>SP001</td>
+            <td>Áo thun nam</td>
+            <td>200,000 VNĐ</td>
+        </tr>
+
+        <tr>
+            <td>SP002</td>
+            <td>Áo khoác nam</td>
+            <td>400,000 VNĐ</td>
+        </tr>
+
+        <tr>
+            <td>SP003</td>
+            <td>Giày thể thao</td>
+            <td>300,000 VNĐ</td>
+        </tr>
+
+    </table>
 </body>
 
 </html>
@@ -60,8 +97,17 @@
         color: brown;
         font-size: larger;
     }
-    .Avatar{
+
+    .Avatar {
         font-size: 15px;
-        color:blue;
+        color: blue;
+    }
+
+    .ProductList {
+        color: blue;
+    }
+
+    .table {
+        color: green;
     }
 </style>

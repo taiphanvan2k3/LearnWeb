@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Phần 1] Tạo dự án ReactJS với Webpack và Babel</title>
+</head>
+
+<body>
+    <h1>27/2/2023: Thực hành làm bài blog
+        <a href="https://htmlcss.fullstack.edu.vn/?id=dce9e4b3-599a-4364-b869-cdf16d7e4789"> Video 37</a>
+    </h1>
+    <img src="https://flash.fullstack.edu.vn/static/media/Poster_Sun_00031.87ac2d715bf685b65681.png"/>
+    <h1>
+        [Phần 1] Tạo dự án ReactJS với Webpack và Babel
+    </h1>
+    <p> Chào mọi người 🤗🤗 </p>
+    <!-- Vì có một khoảng trống giữa 2 đoạn nên sẽ dùng 2 thẻ p liên tiếp -->
+    <p>
+        Hôm nay mình có quay một video trong
+        <a href="https://fullstack.edu.vn/courses/reactjs">
+            khóa học ReactJS</a> là "Tạo dự án ReactJS với Webpack và Babel". Mình làm video này với mong muốn chia sẻ
+        cho các bạn có thể hình dung
+        ra dự án được tạo bởi "create-react-app" được xây dựng như thế nào. Các bạn có thể xem thêm video hướng dẫn ở
+        đây nhé.
+    </p>
+
+    <!-- Tiếp tục là xuống dòng nên sẽ dùng thẻ p -->
+    <p>
+        <!-- Vừa in đậm vừa in nghiêng nên kết hợp giữa thẻ p và thẻ i 
+        và thẻ b,thẻ i nào có trước cũng được-->
+        <b>
+            <i>Click vào hình ảnh này để mở video nhé anh em!</i>
+        </b>
+    </p>
+
+    <!-- Khi đơn thuần bỏ đường link vào thì nó sẽ mặc định là hiển thị đúng kích thước của hình ảnh, nếu to so với trang web
+        mình quá thì cho thêm thuộc tính width , để tuỳ thuộc khi thu gọn tab lại
+        thì ảnh cũng được căng dãn phù hợpwj-->
+
+    <a href="https://www.youtube.com/watch?v=1EBe-l1E3pM.">
+        <!-- Khi nhấn vào ảnh thì sẽ chuyển đến 1 liên kết -->
+        <img width="60%" src="http://i3.ytimg.com/vi/1EBe-l1E3pM/maxresdefault.jpg" />
+    </a>
+
+
+    <p>
+        👉👉 Đăng ký khóa ReactJS miễn phí của mình tại: <a
+            href="https://fullstack.edu.vn/courses/reactjs">https://fullstack.edu.vn/courses/reactjs</a>
+    </p>
+
+    <!-- Dấu gạch ngang như separator -->
+    <hr />
+
+    <!-- Các thẻ h tự động tạo một khoảng trắng giữa các dòng -->
+    <h2>Bắt đầu</h2>
+    <h3>1. Cấu trúc dự án</h3>
+    <h3>2. Khởi tạo dự án</h3>
+    <p>Trong hướng dẫn này mình sử dụng VSCode IDE. Các bạn chọn <b><i>File --> Add Folder to Workspace.</i></b></p>
+    <img width="60%" src="https://files.fullstack.edu.vn/f8-prod/blog_posts/279/6153cea07e4ad.png" />
+    <h3>6. Cài đặt Babel</h3>
+    <p>Chạy: </p>
+    <ul>
+        <li><b>babel-core:</b> Chuyển đổi ES6 về ES5</li>
+        <li><b>babel-loader:</b> Cho phép chuyển các files Javascript sử dụng Babel & Webpack</li>
+        <li><b>babel-preset-env:</b> Cài đặt sẵn giúp bạn sử dụng Javascript mới nhất trên nhiều môi trường khác nhau
+            (nhiều trình duyệt khác nhau). Gói này đơn giản là support truyển đổi ES6, ES7, ES8, ES... về ES5.</li>
+        <li><b>babel-preset-react:</b> Hỗ trợ chuyển đổi JSX về Javascript</li>
+    </ul>
+    <ol>
+        <li>
+            <b> babel-core:</b>
+            Chuyển đổi ES6 về ES5
+        </li>
+        <li>
+            <b>babel-loader:</b>
+            Cho phép chuyển các files Javascript sử dụng Babel & Webpack
+        </li>
+        <li>
+            <b>babel-preset-env:</b>
+            Cài đặt sẵn giúp bạn sử dụng Javascript mới nhất trên nhiều môi trường khác nhau
+            (nhiều trình duyệt khác nhau). Gói này đơn giản là support truyển đổi ES6, ES7, ES8, ES... về ES5.
+        </li>
+        <li>
+            <b>babel-preset-react:</b> 
+            Hỗ trợ chuyển đổi JSX về Javascript
+        </li>
+    </ol>
+
+    <p hidden>Đây là thuộc tính ẩn</p>
+    <!-- Dùng thuộc tính toàn cục title -->
+    <p title="Bấm vào đây để hiển thị thông tin">
+        Hello xin các bạn.
+        <b title="Hiển thị nội dung khác">Chào mừng các bạn</b>
+    </p>
+    <a title="tới trang web của F8" href="">click vào đây</a>
+</body>
+
+</html>
