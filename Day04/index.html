@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ngày 4/3/2023</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Cách kết hợp giữa thẻ heading và thẻ b -->
-    <h1 class ="titleDay4"> 
-        <b class = "highlight">Nội dung học ngày 4/3/2023</b> 
+    <h1 class="titleDay4">
+      <b class="highlight">Nội dung học ngày 4/3/2023</b>
     </h1>
 
     <h2>Nội dung 1: Thẻ br</h2>
     <p>
-        Điện thoại: 0905123440 <br />
-        Email: taiphanvan2403@gmail.com <br />
-        Địa chỉ: Quảng Nam
+      Điện thoại: 0905123440 <br />
+      Email: taiphanvan2403@gmail.com <br />
+      Địa chỉ: Quảng Nam
     </p>
 
     <h2>Nội dung 2: Những sai lầm khi thường gặp</h2>
 
     <h3># Thẻ p lồng thẻ p</h3>
-    <p>Vì p là paragragh nên không thể lấy đoạn văn này chứa đoạn văn kia là vô lí</p>
+    <p>
+      Vì p là paragragh nên không thể lấy đoạn văn này chứa đoạn văn kia là vô
+      lí
+    </p>
 
     <h3># Không sử dụng thẻ p</h3>
     <p>Không sử dụng thẻ p trong tình huống này có một số vấn đề:</p>
     <ol>
-        <li>Không đảm bảo tính <b><i>ngữ nghĩa</i></b></li>
-        <li>Không thể CSS riêng cho đoạn văn bản</li>
-        <li>Không tối ưu cho khả năng truy cập</li>
+      <li>
+        Không đảm bảo tính <b><i>ngữ nghĩa</i></b>
+      </li>
+      <li>Không thể CSS riêng cho đoạn văn bản</li>
+      <li>Không tối ưu cho khả năng truy cập</li>
     </ol>
 
     <h3># Quá nhiều nội dung trong một thẻ p</h3>
@@ -42,32 +46,34 @@
     <h3>Điểm giống nhau:</h3>
     <p>Đều giống nhau về cách hiển thị lên trình duyệt</p>
     <h3>Điểm khác nhau:</h3>
-    <p>Thẻ b và strong khác nhau về ngữ nghĩa và mục đích sử dụng:<br />
-        - Thẻ p đơn thuần là muốn in đậm một nội dung nào đó để thu
-        hút sự chú ý của người dùng.<br />
-        - Trong khi thẻ strong đùng để thể hiện sự quan trọng, cấp bách, khẩn cấ
-        của nội dung cần in đậm</p>
+    <p>
+      Thẻ b và strong khác nhau về ngữ nghĩa và mục đích sử dụng:<br />
+      - Thẻ p đơn thuần là muốn in đậm một nội dung nào đó để thu hút sự chú ý
+      của người dùng.<br />
+      - Trong khi thẻ strong đùng để thể hiện sự quan trọng, cấp bách, khẩn cấ
+      của nội dung cần in đậm
     </p>
 
-    <p>Ví dụ về sử dụng thẻ b và strong. <br/>
-        Hôm nay là <b>thứ bảy ngày 4/3/2023</b> và <strong>tuần sau sẽ thi giữa kì</strong>
+    <p>
+      Ví dụ về sử dụng thẻ b và strong. <br />
+      Hôm nay là <b>thứ bảy ngày 4/3/2023</b> và
+      <strong>tuần sau sẽ thi giữa kì</strong>
     </p>
-</body>
-
+  </body>
 </html>
 
 <style>
-    .highlight{
-        text-align: center;
-        -webkit-text-fill-color: transparent;
-        background: -webkit-linear-gradient(45deg,#5ebbff -33%,#a174ff 69%);
-        -webkit-background-clip: text;
-        background-clip: text;
-    }
+  .highlight {
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(45deg, #5ebbff -33%, #a174ff 69%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 
-    .titleDay4{
-        /* Phải dùng css cho heading thì mới có thể đưa heading về giữa, chứ ta css cho nội dung của heading để
+  .titleDay4 {
+    /* Phải dùng css cho heading thì mới có thể đưa heading về giữa, chứ ta css cho nội dung của heading để
         đưa về giữa nhưng do tính chất của heading thì nó vẫn ở sát bên trái */
-        text-align: center  ;
-    }
+    text-align: center;
+  }
 </style>
