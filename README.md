@@ -10,4 +10,5 @@
 - Thanh quả ngày 4 (9/3/2023)
 ![image](https://user-images.githubusercontent.com/108993284/224005101-21eaaa7d-e244-4b85-ab1e-5a64209f7606.png)
 - Thanh quả ngày 7 (21/3/2023)
-![image](https://user-images.githubusercontent.com/108993284/226677254-fc0b22a1-69c4-4917-bce8-8a1aa5928d96.png)
+![image](https://user-images.githubusercontent.com/108993284/226677753-2fd592e9-3435-499a-8dcc-a8193cfc3be9.png)
+
