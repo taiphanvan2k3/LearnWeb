@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nội dung ngày 27/3/2023</title>
+    <!-- Bước 1: Nhúng code CSS của PrismJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+  </head>
+  <body>
+    <h1 class="title">Nội dung học ngày 27/3/2023</h1>
+    <h2>Cách dùng thẻ &lt;pre&gt;</h2>
+
+    <p>
+      Thẻ pre được dùng để giữa nguyên định dạng của nội dung bên trong nó, tức
+      là viết như nào thì trình duyệt sẽ hiển thị như vậy
+    </p>
+    <pre>
+    Đây là ví dụ:
+        Không cần xuống dòng bằng thẻ br nhưng vẫn có thể xuống dòng được
+        Và nội dung hiển thị ra trình duyệt sẽ có định dạng y hệt với cách viết trong code
+    </pre>
+
+    <h2>Cách dùng HTML Entities</h2>
+    <p>
+      Dưới đây là cách hiển thị được thẻ &lt;i&gt;: <br />
+      Hôm nay là &lt;i&gt; ngày đẹp trời &lt;/i&gt; <br />
+      Hay &lt;b&gt; tuyệt vời &lt;/b&gt;
+    </p>
+
+    <h2>Cách dùng thẻ <code class="language-html">&lt;code&gt;</code>:</h2>
+    <p>
+      Thẻ &lt;code&gt; trong HTML được sử dụng để thể hiện các đoạn code trong
+      nội dung trang web.
+    </p>
+
+    <p>Cách để highlight code sử dụng thư viện PrismJS</p>
+    <!-- Bước 3: Thêm class="language-html" cho thẻ <code> -->
+    <pre>
+<code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Highlight Code with PrismJS&lt;/title&gt;
+    &lt;!-- Bước 1: Nhúng code CSS của PrismJS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- Bước 3: Thêm class=&quot;language-html&quot; cho thẻ &lt;code&gt; --&gt;
+&lt;pre&gt;
+&lt;code class=&quot;language-html&quot;&gt;
+&lt;img
+    src=&quot;https://htmlcss.fullstack.edu.vn/assets/f8_icon.png&quot;
+    width=&quot;100&quot;
+    height=&quot;100&quot;
+    alt=&quot;F8&quot;  
+/&gt;
+&lt;/code&gt;
+&lt;/pre&gt;
+    &lt;!-- Bước 2: Nhúng code JavaScript của PrismJS --&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+</pre>
+
+    <p>
+      Thư viện PrismJS dựa vào classname để biết được ngôn ngữ nào đang được sử
+      dụng trong thẻ &lt;code&gt; để highlight lên
+    </p>
+
+    <pre>
+<code class="language-css">/*Khi dùng với ngôn ngữ CSS*/
+a {color:red}</code>
+</pre>
+
+    <pre>
+<code class="language-cs" >/*Khi dùng với ngôn ngữ C#*/
+string fullName = "Phan Văn Tài";
+int age = 20;
+DateTime now = DateTime.Now; </code>
+</pre>
+    <!-- Bước 2: Nhúng code JavaScript của PrismJS -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  </body>
+</html>
+
+<style>
+  .title {
+    text-align: center;
+  }
+</style>
