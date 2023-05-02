@@ -12,6 +12,10 @@
     />
   </head>
   <body>
+    <!-- Bước 2: Nhúng code JavaScript của PrismJS -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
     <h1 class="title">Nội dung học ngày 27/3/2023</h1>
     <h2>Cách dùng thẻ &lt;pre&gt;</h2>
 
@@ -40,8 +44,11 @@
 
     <p>Cách để highlight code sử dụng thư viện PrismJS</p>
     <!-- Bước 3: Thêm class="language-html" cho thẻ <code> -->
+
+    <!-- Nhờ vào việc thêm class="language-html" giờ đây ta có thể hightlight được code  -->
     <pre>
-<code class="language-html">&lt;!DOCTYPE html&gt;
+<code class="language-html">&lt!-- Đây là cách để hiển thị code--&gt;
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -85,9 +92,14 @@ string fullName = "Phan Văn Tài";
 int age = 20;
 DateTime now = DateTime.Now; </code>
 </pre>
-    <!-- Bước 2: Nhúng code JavaScript của PrismJS -->
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+    <pre>
+<code class ="language-java">/*Comment: Khi dùng với ngôn ngữ Java*/
+String str = "Phan Văn Tài";
+int x = 5;
+Scanner sc = new Scanner(System.in);
+</code>
+</pre>
   </body>
 </html>
 
