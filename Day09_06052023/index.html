@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review HTML phần thẻ code</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css"
+    />
+  </head>
+  <body>
+    <p>Ví dụ: bạn có thể đánh dấu một đoạn văn bản với code HTML như này:</p>
+    <pre>
+<code class="language-html">&lt;p id=&quot;paragraph&quot;&gt;Hôm nay là một ngày đẹp trời!&lt;/p&gt;</code>
+</pre>
+    <p>
+      Sau đó, bạn có thể đặt kích thước và màu sắc cho đoạn văn bản với CSS sau:
+    </p>
+    <pre>
+<code class="lang-css">#paragraph {
+font-size: 18px;
+color: red;
+}</code>
+</pre>
+    <p>
+      Cuối cùng, nếu bạn muốn nhấn vào đoạn văn bản thì nội dung của nó sẽ thay
+      đổi, thêm code JavaScript sau:
+    </p>
+
+    <pre>
+<code class="lang-js">const p = document.getElementById(&apos;paragraph&apos;);
+p.onclick = function() {
+    this.innerText = &apos;Bạn đã CLICK vào đoạn văn bản!&apos;;
+  };</code>
+</pre>
+<!-- Bước 2: Nhúng code JavaScript của PrismJS -->
+<!-- Để ở cuối thẻ body -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  </body>
+</html>
