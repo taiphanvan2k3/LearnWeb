@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nội dung học ngày 14/5/2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!--C1 Dùng Internal  -->
+    <style>
+      body {
+        /* Áp dụng CSS vào cho thẻ body, tất cả thẻ trong thẻ body đều nhận được CSS này để thiết lập font chữ dùng trong body
+            là phông chữ không có chân */
+
+        /* sans-serif: chủng không chân */
+        font-family: "Montserrat", sans-serif;
+      }
+
+      p {
+        /* CSS áp dụng cho tất cả thẻ  p*/
+        font-size: 14px;
+
+        /* Thay đổi khoảng cách giữa các dòng */
+        line-height: 1.6;
+        color: blue;
+      }
+
+      a {
+        /* Thẻ a là thẻ inline nên phải chuyển nó sang thẻ block mới có thể dùng
+        margin và padding.Nếu dùng display: block thì button sẽ bị dài hẳn ra nên phải
+        dùng inline-block*/
+        display: inline-block;
+        margin-top: 12px;
+        /* Thứ tự tham số top -> right -> bottom -> left
+         Nếu không có left thì left = right
+         Nếu không có right thì  */
+        padding: 8px 16px 20px;
+        border: 2px solid black;
+        /* Tip bo góc */
+        border-radius: 999px;
+        color: black;
+
+        /* Bỏ đi gạch chân bằng cách set none cho text-decoration */
+        text-decoration: none;
+        /* Tăng độ đậm của cỡ chữ */
+        font-weight: 600;
+
+        /* Nếu không có transition thì việc dùng CSS đổi background khi hover
+        sẽ thay đổi đột ngột */
+        transition: ease 0.25s;
+        cursor: pointer;
+      }
+
+      a:hover {
+        /* CSS này sẽ chỉ có tác dụng khi ta rê chuột vào thẻ này thôi */
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Nội dung học:</p>
+    <ul>
+      <li>Xem lại tính hợp lệ của HTML</li>
+      <li>Làm quen với CSS</li>
+    </ul>
+
+    <p>Ví dụ 1:</p>
+    <h2>Tham gia cộng đồng học viên F8 trên Facebook</h2>
+    <p>
+      Hàng nghìn người khác đang học lộ trình giống như bạn. Hãy tham gia hỏi
+      đáp, chia sẻ và hỗ trợ nhau trong quá trình học nhé.
+    </p>
+
+    <a href="https://www.facebook.com/groups/f8official" target="_blank"
+      >Tham gia nhóm</a
+    >
+  </body>
+</html>
