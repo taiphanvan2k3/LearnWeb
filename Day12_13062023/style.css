@@ -1,0 +1,43 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1634984884181-f8a6b98decdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80);
+}
+
+strong {
+    /* Cách khắc phục khi margin,padding không "ăn" đó là set lại display */
+    display: inline-block;
+    background-color: green;
+    margin: 10px;
+    width: 60px;
+    padding-left: 20px;
+}
+
+p {
+    background-color: skyblue;
+}
+
+.button {
+    /* Set display: inline-block thì mới dùng được các
+    thuộc tính min-width,padding-top,... ở dưới */
+    display: inline-block;
+    background-color: orange;
+    min-width: 80px;
+
+    /* Căn giữa */
+    text-align: center;
+
+    /* Bỏ gạch chân */
+    text-decoration: none;
+    font-weight: bolder;
+    color: whitesmoke;
+
+    /* Giá trị đầu là top,bottom
+    Giá trị cuối là left,right */
+    padding: 8px 16px;
+
+    /* Tip để bỏ góc 1 nút là border-radio */
+    border-radius: 9999px;
+    margin-right: 20px;
+
+    /* Tạo độ mờ */
+    opacity: 60%;
+}
