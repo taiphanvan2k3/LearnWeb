@@ -1,0 +1,27 @@
+* {
+    font-style: italic;
+}
+
+#Paragraph3 {
+    font-size: 32px;
+    color: red;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    color: green;
+}
+
+.blue-color {
+    color: skyblue;
+}
+
+.large {
+    font-size: 30px;
+}
+
+b.large{
+    font-style: normal;
+    font-size: 20px;
+}

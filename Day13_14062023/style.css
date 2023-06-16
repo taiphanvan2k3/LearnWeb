@@ -1,0 +1,54 @@
+figure {
+    transition: 1s;
+}
+
+input:checked~figure {
+    /* Khi click vào checkbox thì ẩn hình ảnh*/
+
+    /* Dùng display: none; nếu không muốn chiếm đi không gian
+    nhưng không dùng animation được */
+    /* display: none; */
+
+    /* Dùng thêm visibily:hidden để người dùng không thể
+    tương tác với phần tử được ẩn */
+    visibility: hidden;
+    opacity: 0;
+}
+
+div {
+    margin-left: 20%;
+    padding-right: 20px;
+    width: 60%;
+    height: 100%;
+    background-color: black;
+    border: 3px solid skyblue;
+    color: whitesmoke;
+    font-size: 17px;
+}
+
+.summary {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+a {
+    color: skyblue;
+}
+
+code {
+    display: inline-block;
+    background-color: gray;
+    padding: 2px 8px;
+}
+
+pre {
+    /* Do thẻ pre là thẻ block nên nó sẽ xuống hàng.
+    Tuy nhiên trong trường hợp này không muốn nó xuống hàng nên
+    dùng inline */
+    display: inline;
+}
+
+li {
+    margin-top: 15px;
+}

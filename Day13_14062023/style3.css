@@ -1,0 +1,26 @@
+div,
+p {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(57, 61, 59);
+}
+
+p {
+    /* background-color được ghi sau nên sẽ có hiệu lực hơn */
+    background-color: rgb(100, 128, 0);
+}
+
+.box3,
+#box4 {
+    background-color: rgb(135, 235, 145);
+    width: 80px;
+    height: 80px;
+}
+
+.box3{
+    background-color: rgb(140, 255, 0);
+}
+
+.box3.larger{
+    height: 100px;
+}

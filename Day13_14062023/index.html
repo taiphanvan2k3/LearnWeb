@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nội dung học ngày 14/06/2023</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Nội dung học ngày 14/06/2023</h1>
+    <h2>1. Ví dụ về việc ẩn hiện img khi click vào checkbox</h2>
+    <input type="checkbox"> Ẩn hình ảnh
+    <figure>
+        <img src="https://htmlcss.fullstack.edu.vn/assets/f8_icon.png" alt="F8">
+    </figure>
+    <p>Thành phần khác</p>
+
+    <div>
+        <p class="summary">Tóm tắt</p>
+        <ul>
+            <li>Tất cả các thẻ HTML mặc định có thuộc tính <code>display</code>, tùy vào loại thẻ đó thì display sẽ có
+                giá trị tương
+                ứng. Ví dụ: thẻ block sẽ mặc định có display: block, thẻ inline sẽ mặc định có display: inline.</li>
+            <li>Trường hợp thẻ không có thuộc tính display trong user agent stylesheet sẽ là thẻ inline</li>
+            <li>Có thể tra cứu một thẻ HTML thuộc loại thẻ Inline hay Block tại <a href="https://htmlreference.io/"
+                    target="_blank">HTML Reference</a></li>
+            <li>Các thẻ Block luôn bắt đầu trên một hàng mới.</li>
+            <li>Các thẻ Block chiếm toàn bộ chiều rộng hết mức có thể. Trình duyệt có thể tự động thêm margin (top,
+                bottom) vào một số thẻ Block như: <code>h1 - h6</code>,
+                <pre><code>&lt;p&gt;</code></pre>, <code>ul</code>, <code>ol</code>, v.v.
+            </li>
+            <li>Thẻ Inline không bắt đầu trên một hàng mới, độ rộng của thẻ Inline tùy thuộc vào nội dung mà nó chứa.
+                Khi có nhiều thẻ Inline đứng cạnh nhau thì chúng sẽ nằm trên cùng một hàng.</li>
+            <li>Thuộc tính <code>display</code>: none sẽ loại bỏ phần tử khỏi bố cục trang web.</li>
+            <li>Thuộc tính <code>opacity</code> có giá trị từ <code>0.0 - 1.0</code>, được dùng để làm mờ phần tử trên
+                giao diện, có thể nhìn
+                xuyên qua phần tử để thấy được chi tiết phía dưới. Với giá trị là 0, phần tử sẽ hoàn toàn trong suốt và
+                không thể nhìn thấy trên giao diện.</li>
+            <li>Thuộc tính <code>visibility</code> dùng để thay đổi sự hiển thị của các phần tử. Với giá trị visible thì
+                phần tử có
+                thể nhìn thấy (mặc định), với giá trị hidden phần tử sẽ không thấy trên giao diện, tuy nhiên không
+                gian/diện tích của phần tử không bị loại bỏ khỏi bố cục của trang web.</li>
+            <li>Trường hợp sử dụng <code>display: none</code>, <code>opacity: 0</code> và
+                <code>visibility: hidden</code>
+                <ul>
+                    <li><code>display: none</code>
+                        <ul>
+                            <li>Ẩn và loại bỏ không gian/diện tích của phần tử khỏi bố cục trang web</li>
+                            <li>Không cần hiệu ứng chuyển tiếp (transition)</li>
+                        </ul>
+                    </li>
+                    <li><code>opacity: 0</code>
+                        <ul>
+                            <li>Tăng/giảm độ mờ của phần tử HTML trên giao diện trang web</li>
+                            <li>Kết hợp với transition để tạo hiệu ứng chuyển tiếp như:
+                                <ul>
+                                    <li>Fade in: từ từ hiện lên</li>
+                                    <li>Fade out: từ từ ẩn đi</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><code>visibility: hidden</code>
+                        <ul>
+                            <li>Ẩn phần tử mà không làm thay đổi bố cục trang web (không gian của phần tử không bị loại
+                                bỏ)</li>
+                            <li>Kết hợp với transition và opacity để tạo hiệu ứng chuyển tiếp như:
+                                <ul>
+                                    <li>Fade in: từ từ hiện lên</li>
+                                    <li>Fade out: từ từ ẩn đi</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
