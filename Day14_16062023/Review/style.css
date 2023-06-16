@@ -1,0 +1,13 @@
+/* * {
+    color: red;
+} */
+
+/* CSS cho tất cả thẻ con của thẻ div */
+/* div *{
+    color: green;
+} */
+
+/* CSS cho tất cả thẻ trong thẻ div ngoại trừ thẻ div */
+div *:not(p) {
+    color: red;
+}

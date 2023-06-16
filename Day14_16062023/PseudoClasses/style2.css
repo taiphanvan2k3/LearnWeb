@@ -1,0 +1,39 @@
+a:visited {
+    /* CSS lên các thẻ a đã truy cập link */
+    /* color: red; */
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+}
+
+
+.box {
+    background-color: blue;
+}
+
+.box:active {
+    background-color: yellow;
+}
+
+h2:target {
+    color: red;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #5ebbff;
+    padding: 8px 16px;
+}
+
+.btn + .btn {
+    margin-left: 10px;
+}
+
+.btn:hover{
+    border-left: 5px solid red;
+}

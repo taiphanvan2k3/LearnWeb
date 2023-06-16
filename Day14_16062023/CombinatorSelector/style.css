@@ -1,0 +1,17 @@
+.box1 p {
+
+    color: red;
+}
+
+.box1 > p {
+    color: green;
+    font-size: 20px;
+}
+
+.box1 + p {
+    color: blue;
+}
+
+.box1 ~ p {
+    color: brown;
+}

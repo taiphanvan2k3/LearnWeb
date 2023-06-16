@@ -1,0 +1,23 @@
+ul li:not(ul li:first-child) {
+    color: red;
+}
+
+ul li:first-child{
+    color: green;
+}
+
+/* 
+Nếu muốn CSS nhưng bỏ đi phần tử có thuộc tính class = "text ignore"
+div .text:not(.text.ignore){
+    background-color: yellow;
+} */
+
+/* Cũng có thể viết như sau do các phần tử đều cùng tên class */
+div :not(.text.ignore){
+    background-color: yellow;
+}
+
+/* Nếu muốn  */
+div .text:not(.text.ignore, b){
+    background-color: cyan;
+}

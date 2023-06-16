@@ -1,0 +1,27 @@
+/* a#id có value = 1+100 = 101 */
+a#demo{
+    color: cyan;
+}
+
+/* Id có value =100 */
+#demo {
+    color: purple;
+}
+
+/* selector class có value = 10 nên ưu tiên hơn a */
+.link{
+    color: green;
+}
+
+/* selector tagname có value = 1 nên sẽ được ưu tiên hơn dù viết trước * */
+a{
+    /* Mạnh hơn cả inline */
+    color: red !important;
+}
+
+/* selector * có value = 0 */
+* {
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+}

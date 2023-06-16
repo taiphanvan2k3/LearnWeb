@@ -1,0 +1,20 @@
+h1:hover {
+    color: red;
+}
+
+h1 {
+    color: blue;
+    /* Do chỉ muốn  */
+    display: inline-block;
+}
+
+h1:active {
+    background-color: green;
+    /* Loại bỏ việc bôi đen */
+    user-select: none;
+}
+
+.box p:hover {
+    color: red;
+}
+

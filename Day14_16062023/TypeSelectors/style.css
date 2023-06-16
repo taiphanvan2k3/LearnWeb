@@ -1,0 +1,16 @@
+.div1 p:first-of-type {
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.div1 p:nth-last-of-type(2) {
+    /* Không quan tâm thẻ b đang chen ngang, nó lấy ra thẻ xuất hiện ở vị trí thứ hai trong thẻ loại p 
+    từ dưới lên*/
+    color: red;
+}
+
+.div1 b:only-of-type{
+    color:green;
+    font-size: 50px;
+}

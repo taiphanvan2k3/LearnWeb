@@ -1,0 +1,31 @@
+p:first-child {
+    color: red;
+}
+
+ul li:first-child a {
+    color: red;
+}
+
+div p:nth-child(2) {
+    color: green;
+    font-size: 30px;
+}
+
+div p:nth-last-child(4) {
+    /* CSS lên thẻ p nằm trong thẻ div mà thẻ p này là thẻ
+    con thứ 4 tính từ dưới lên */
+    color: violet;
+    font-size: 40px;
+}
+
+div p:nth-child(2n) {
+    color: cadetblue;
+}
+
+div p:only-child{
+    display: inline-block;
+    color: white;
+    background-color: red;
+    padding: 8px 16px;
+    border-radius: 9999px;
+}
