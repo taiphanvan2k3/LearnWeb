@@ -1,0 +1,16 @@
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    
+}
+
+.avatar:hover{
+    margin-left: 0;
+}
+
+/* Tác động lên các class avatar này sau 1 class avatar khác */
+.avatar + .avatar{
+    margin-left:-50px;
+}

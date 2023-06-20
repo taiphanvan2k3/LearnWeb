@@ -1,0 +1,45 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.4;
+}
+
+.content {
+    margin: 0 auto;
+    width: 700px;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.content h2 {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    border-left: 3px solid tomato;
+    padding-left: 10px;
+}
+
+.content h2:hover {
+    color: red;
+}
+
+.content p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.content img {
+    width: 100%;
+}
+
+.content figcaption {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+}
