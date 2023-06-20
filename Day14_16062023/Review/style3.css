@@ -1,0 +1,8 @@
+/* Có độ ưu tiện cao hơn */
+.text:not(.text.ignore){
+    color:green;
+}
+
+.text:not(.ignore){
+    color: red;
+}
