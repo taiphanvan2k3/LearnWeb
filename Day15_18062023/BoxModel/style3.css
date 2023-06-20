@@ -1,0 +1,29 @@
+body {
+    background-color: #A174FF;
+    /* Vì có 1 khoảng hở do line-height khác 0 nên ko tạo ra được hình
+    dạng của tin nhắn hoàn chỉnh */
+    line-height: 0;
+}
+
+.message{
+    padding: 20px;
+}
+.message div:first-child {
+    display: inline-block;
+    margin-left: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #FFFFFF;
+}
+
+.message div:last-child {
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+p {
+    padding: 10px;
+    line-height: 20px;
+}

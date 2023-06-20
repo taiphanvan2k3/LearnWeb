@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            padding: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: white;
+            background-color: cyan;
+            padding: 8px 20px;
+            border-radius: 5px;
+        }
+
+        /* dùng thẻ span vì đây là thẻ phi ngữ nghĩa và mong muốn dùng 1 thẻ inline */
+        .hashtag {
+            background-color: gray;
+            padding: 5px 4px;
+            padding-bottom: 2px;
+            border-radius: 3px;
+            border-style: solid dotted double dashed;
+            border-color: green;
+        }
+
+        .triangle {
+            /* Thiết lập display để nó ko to bằng chiều rộng */
+            display: inline-block;
+            margin-left: 30px;
+            border-width: 30px;
+            border-style: solid;
+            border-color: transparent transparent transparent tomato;
+        }
+
+        blockquote {
+            margin-left: 0px;
+            border-left: 10px rgb(110, 175, 208) solid;
+            padding: 8px 16px;
+            background-color: rgb(210, 231, 242);
+        }
+
+        ul li{
+            border-bottom: 1px solid gray;
+        }
+
+        ul li:last-child{
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, molestiae!
+        </h1>
+        <p>
+            Lorem, <span class="hashtag">#ipsum</span> dolor sit amet consectetur
+            adipisicing elit. Magni, minus veritatis sunt, itaque ducimus similique quia
+            error autem ex quos eveniet? Fugit exercitationem assumenda, voluptatum
+            quidem distinctio consequatur culpa ex?
+        </p>
+
+        <blockquote>
+            Lorem ipsum dolor sit amet,
+            adipisicing elit. Mollitia fugiat est inventore repellat, facilis doloremque
+            rerum explicabo quia dolorum libero, debitis facere. Facilis eius excepturi
+            repellendus ab quibusdam ipsa maiores!
+        </blockquote>
+
+        <a class="btn" href="#!">View more &gt;&gt;</a>
+    </div>
+
+    <p>Tư duy vẽ hình tam giác:</p>
+    <div class="triangle"></div>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+    </ul>
+</body>
+
+</html>
