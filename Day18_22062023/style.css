@@ -37,7 +37,7 @@
     background-clip: content-box;
 }
 
-.highlight{
+.highlight {
     color: #4158D0;
 }
 
@@ -51,9 +51,9 @@
     }
 }
 
-.box3{
+.box3 {
     width: 400px;
-    height: 400px;    
+    height: 400px;
     background-image: url(https://images.unsplash.com/photo-1687226197732-f91552499640?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4NHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
     border: 30px solid green;
     background-size: cover;
@@ -64,4 +64,13 @@
     background-origin: border-box;
     /* background-origin: content-box; */
     background-position: center;
+}
+
+.box4 {
+    height: 200px;
+    border: 30px solid #ccc;
+    padding: 30px;
+    /* chỉ cần quan tâm thứ tự của bg-position/bg-size và bg-origin và bg-clip thôi, còn lại các giá trị khác có thể đảo thứ tự */
+    background: no-repeat url(https://images.unsplash.com/photo-1687226197732-f91552499640?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4NHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60) green center/300px border-box;
+    background-clip: content-box;
 }

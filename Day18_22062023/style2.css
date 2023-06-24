@@ -1,0 +1,17 @@
+body {
+    background: url(https://files.fullstack.edu.vn/f8-prod/banners/Banner_01_2.png) center/contain;
+}
+
+.blur {
+    margin-top: 200px;
+    height: 80px;
+    background-color: #333;
+}
+
+@supports (backdrop-filter: blur(20px)) or (-webkit-backdrop-filter: blur(20px)) {
+    .blur {
+        background-color: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+}
