@@ -1,0 +1,30 @@
+/* Nếu muốn dùng font-chữ hệ thống thì sử dụng như sau: */
+/* body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+} */
+h1 {
+    font-variant: small-caps;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p:nth-last-of-type(2) {
+    font-family: 'Montserrat', sans-serif;
+    /* letter-spacing: 1px; */
+    /* text-align: center; */
+    text-indent: 30px;
+    text-align: justify;
+    /* background-color: orange; */
+    /* white-space: normal; */
+    word-break: break-all;
+}
+
+p:last-of-type {
+    background-color: orange;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
