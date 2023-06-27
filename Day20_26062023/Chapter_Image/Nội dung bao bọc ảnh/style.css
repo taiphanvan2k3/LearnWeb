@@ -1,0 +1,30 @@
+body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
+
+.content {
+    max-width: 95%;
+    text-align: justify;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+
+.content h3 {
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-top: 10px;
+}
+
+.content figure {
+    margin: 10px 10px 0 10px;
+    float: left;
+}
+
+.bg-image {
+    width: 100px;
+    height: 100px;
+    background: url(https://htmlcss.fullstack.edu.vn/assets/f8_icon.png) center/cover;
+}

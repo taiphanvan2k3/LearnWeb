@@ -1,0 +1,18 @@
+.content{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* Để cho hình ảnh nằm ra giữa
+C1: CSS trực tiếp lên thẻ img*/
+.content img{
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* .content figure{
+    text-align: center;
+} */

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega menu</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Mega menu thường sẽ có 2 cấp và cấp 2 của nó sẽ có độ rộng lớn.
+    Tại menu cấp 2 có thể bỏ ảnh vào
+    Menu cấp 2 thường có độ rộng bằng độ rộng của phần hiển thị nội dung
+    và điểm khác biệt của nó với menu cấp 1 là nó không dịnh vị theo thẻ li
+    mà nó sẽ định vị theo thẻ cha của menu cấp 1 luôn.-->
+
+    <!-- Có thể dùng ul cho class="menu" và li cho class="menu-item" -->
+    <div class="menu">
+        <!-- Không dùng thẻ span ở đây vì theo HTML
+        một thẻ inline sẽ không chứa 1 thẻ block -->
+
+        <!-- Item1 -->
+        <div class="menu-item">
+            <a href="#!">Home</a>
+            <div class="sub-menu">
+                <h3>Home ipsum dolor sit.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, veniam earum? Fugiat fugit, adipisci
+                    consequuntur ducimus eos iusto sequi enim!</p>
+            </div>
+        </div>
+
+        <!-- Item2 -->
+        <div class="menu-item">
+            <a href="#!">Products</a>
+            <div class="sub-menu">
+                <h3>Products ipsum dolor sit.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, veniam earum? Fugiat fugit, adipisci
+                    consequuntur ducimus eos iusto sequi enim!</p>
+            </div>
+        </div>
+
+        <!-- Item3 -->
+        <div class="menu-item">
+            <a href="#!">Manufacturers</a>
+            <div class="sub-menu">
+                <h3>Manufacturers ipsum dolor sit.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, veniam earum? Fugiat fugit, adipisci
+                    consequuntur ducimus eos iusto sequi enim!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

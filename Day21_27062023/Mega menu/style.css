@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    background: #ddd;
+}
+
+.menu {
+    border-top: 2px solid #ccc;
+    position: relative;
+}
+
+.menu .menu-item {
+    /* Để không xuống hàng */
+    display: inline-block;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+.menu .sub-menu {
+    position: absolute;
+    background: white;
+    /* Để thẻ p này nằm sát vào bên trái so với gốc tọa độ
+    tại thẻ cha của nó mà được định vị trí */
+    left: 0;
+    padding: 20px;
+    display: none;
+}
+
+.sub-menu h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sub-menu p {
+    margin-top: 10px;
+}
+
+.menu a {
+    /* Để padding được thì display: inline-block */
+    display: inline-block;
+    text-decoration: none;
+    padding: 16px 8px;
+    color: black;
+}
+
+.menu a:hover {
+    color: cyan;
+    background: #fff;
+}

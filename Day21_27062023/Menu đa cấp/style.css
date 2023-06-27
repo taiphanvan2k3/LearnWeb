@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    background: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu>li {
+    display: inline-block;
+    margin-right: 30px;
+
+    /* Tăng padding-bottom lên để có thể rê chuột vào
+    được sub-menu */
+    padding-bottom: 10px;
+}
+
+.menu li {
+    /* Do các menu con sẽ định vị theo thẻ li cha của nó */
+    position: relative;
+}
+
+.menu li:hover > .sub-menu{
+    /* Khi hover vào thẻ li thì submenu con trực tiếp của nó
+    mới hiển thi */
+    display: block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sub-menu {
+    /* Mặc định các thẻ li có position: static
+    nên bây giờ muốn dùng position: absolute thì 
+    thẻ cha của nó là các thẻ li cần có position: relative */
+    position: absolute;
+    top: 32px;
+    left: -10px;
+    background: #fff;
+    width: 140px;
+    display: none;
+}
+
+/* CSS cho các submenu kể từ cấp 3 hoặc viết .sub-menu .sub-menu */
+/* Cách tự làm: */
+.sub-menu:not(.menu>li>.sub-menu) {
+    top: 37px;
+    left: 140px;
+    top: 0;
+    display: none;
+}
+
+
+.sub-menu a {
+    /* Nếu dùng display: inline-block thì độ rộng chỉ bằng
+    kích thước của text hiện có */
+    /* display: inline-block;
+    width: 100%; */
+    /* Hoặc dùng: */
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sub-menu a:hover {
+    background: #ddd;
+}
+
+.menu li:hover > .sub-menu{
+    display: block;
+}
