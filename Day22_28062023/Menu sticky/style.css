@@ -1,0 +1,14 @@
+.chapter {
+    margin-left: 60%;
+    background: #ccc;
+    height: 500px;
+    overflow: auto;
+}
+
+h2 {
+    /* Lúc này nó sẽ định vị trí theo thẻ cha có thanh cuộn của nó
+    là thẻ ul */
+    background: orange;
+    position: sticky;
+    top: 0;
+}

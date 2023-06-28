@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 24px;
+    line-height: 1.5;
+}
+
+.content h1 {
+    font-size: 3.2rem;
+}
+
+.content p {
+    margin: 16px 0;
+    font-size: 1.8rem;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+/* Modal */
+.modal,
+.modal .overlay {
+    /* Dùng fixed để định vị trí của modal theo viewport */
+    position: fixed;
+    display: flex;
+    inset: 0;
+}
+
+.modal .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal .content-modal {
+    /* Để định vị trí nút bấm theo nội dung modal thì set position: relative cho nội dung modal */
+    position: relative;
+    margin: auto;
+    width: 440px;
+    z-index: 2;
+}
+
+.modal .btn-close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    /* cần set background cho thẻ button để  */
+    background: #ebebeb;
+}
+
+.modal .btn-close:active {
+    background: #ccc;
+}
+
+.modal .btn-close i {
+    font-size: 20px;
+    color: #666;
+}
+
+.modal .content-modal img {
+    width: 100%;
+}
