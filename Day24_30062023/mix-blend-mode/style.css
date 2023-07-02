@@ -1,0 +1,26 @@
+.box{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    border: 2px dashed black;
+    margin: 0 auto;
+}
+
+.result{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    background: #191d1e;
+    mix-blend-mode: difference;
+}
+
+.result .circle{
+    width: 200px;
+    height: 200px;
+    background: #a174ff;;
+    border-radius: 50%;
+    margin-top: 7px;
+    margin-left: 7px;
+}

@@ -1,0 +1,19 @@
+.container {
+    height: 600px;
+    display: flex;
+    width: 60%;
+    /* margin: 0 auto; */
+    background: orange;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    /* align-content: flex-end; */
+    align-content: space-evenly;
+}
+
+.container .item {
+    /* margin: 3px; */
+    background: green;
+    font-size: 24px;
+    width: 30%;
+    border: 1px solid #ccc;
+}

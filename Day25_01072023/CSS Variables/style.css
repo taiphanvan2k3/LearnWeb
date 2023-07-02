@@ -1,0 +1,65 @@
+:root {
+    --primary-color: #1473e6;
+}
+
+p b {
+    color: var(--primary-color);
+}
+
+h1 {
+    --heading-color: orange;
+
+    color: var(--primary-color);
+}
+
+h1 b {
+    color: var(--heading-color);
+}
+
+.container {
+    width: 60%;
+    height: 500px;
+    background: #ccc;
+    margin: 0 auto;
+}
+
+.container img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.list {
+    --spacing: 30px;
+
+    /* Sử dụng display: flex; để các thẻ block bên trong nằm trên 1 hàng */
+    display: flex;
+
+    /* Không muốn phần tử đầu tiên bị cách left 30px */
+    margin-left: calc(-1 * var(--spacing));
+}
+
+.list .item {
+    width: 50%;
+    height: 100px;
+    background: orange;
+    margin-left: var(--spacing);
+}
+
+/* Hoặc dùng CSS selector + */
+
+/* .list .item+.item {
+    margin-left: 30px;
+} */
+
+a[title~="test"][title~="nè"]{
+    color: red;
+}
+
+a[title|="test "]{
+    color: pink;
+}
+
+a[title*="ch"]{
+    color: green;
+}

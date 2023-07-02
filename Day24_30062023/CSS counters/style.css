@@ -1,0 +1,25 @@
+body {
+    /* default heading = 0 */
+    counter-reset: heading;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    counter-increment: heading;
+    counter-reset: sub-heading;
+}
+
+.content h2::before {
+    content: counter(heading) ". ";
+}
+
+.content h3{
+    counter-increment: sub-heading;
+}
+
+.content h3::before {
+    content: counter(heading) "." counter(sub-heading) " ";
+}
