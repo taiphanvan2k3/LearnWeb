@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    background-color: #ebebeb;
+}
+
+/******************** Navbar ********************/
+.nav {
+    /* Cho display: flex để 2 thẻ ul nằm trên cùng 1 hàng */
+    display: flex;
+    height: 54px;
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+    justify-content: space-between;
+    /* Hoặc dùng margin-left ở dưới */
+}
+
+/* .nav .nav-list:last-child{
+    margin-left: auto;
+} */
+
+.nav-list {
+    margin: auto 16px;
+    padding-left: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin: 0 8px;
+    list-style: none;
+}
+
+.nav-item a {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/******************** Form layout ********************/
+.form-container {
+    max-width: 720px;
+    margin: 36px auto 0 auto;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+.form-container .form {
+    flex-grow: 1;
+}
+
+.form-container .row {
+    display: flex;
+    padding: 8px 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-container .label {
+    font-weight: 500;
+    flex-grow: 0;
+
+    /* Đặt min-width cho label để các input sau khi chiếm hết phần còn
+    lại thì chiều dài của nó bằng nhau */
+    min-width: 30%;
+}
+
+.form-container .input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    /* Thêm flex-grow: 1 để input chiếm hết phần còn lại */
+    flex-grow: 1;
+}
+
+.form-container .input:focus {
+    outline: 2px solid #0093e9;
+}
+
+/******************** Column layout ********************/
+.column-layout {
+    display: flex;
+    margin-top: 36px;
+    padding: 12px 0;
+    background-color: #fff;
+}
+
+.column-layout h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.column-layout p {
+    margin: 16px 0;
+}
+
+.column-item {
+    padding: 0 16px;
+}
+
+.sidebar-one {
+    flex: 1;
+}
+
+.main-column {
+    flex: 3;
+}
+
+.sidebar-two {
+    flex: 1;
+}
+
+/******************** Feature layout ********************/
+.feature-layout {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-layout h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.feature-layout p {
+    margin: 16px 0;
+}
+
+.feature-item {
+    width: 30%;
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 16px;
+    color: #fff;
+}
+
+.feature-item:nth-child(1) {
+    background-color: #08aeea;
+    background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+}
+
+.feature-item:nth-child(2) {
+    background-color: #ff9a8b;
+    background-image: linear-gradient(90deg,
+            #ff9a8b 0%,
+            #ff6a88 55%,
+            #ff99ac 100%);
+}
+
+.feature-item:nth-child(3) {
+    background-color: #fbab7e;
+    background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+
+/******************** Wrap layout 1 ********************/
+.wrap-layout-1 {
+    display: flex;
+    margin-top: 36px;
+    padding: 32px 0;
+    background-color: #fff;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.wrap-layout-1 .item {
+    width: 148px;
+    height: 90px;
+    margin-top: 20px;
+    border-radius: 16px;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 90px;
+    color: #fff;
+    background-color: #74ebd5;
+    background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+}
+
+/******************** Wrap layout 2 ********************/
+.wrap-layout-2 {
+    --columns: 3;
+    --gap: 8px;
+    display: flex;
+    margin-top: 36px;
+    padding: 32px 0;
+    background-color: #fff;
+    flex-wrap: wrap;
+
+    /* Làm mẹo để dịch container về bên trái 8px so với lề */
+    margin-left: calc(-1*var(--gap));
+    /* 
+    gap: var(--gap);
+    Nếu dùng gap thì không dùng margin-left, margin-top dưới flex-item và cả 
+    margin-left: calc(-1*var(--gap)); ở flex-container nữa
+    vì nó đã tự cho khoảng cách giữa các hàng và các cột là var(--gap) rồi
+    */
+}
+
+.wrap-layout-2 .item {
+    width: calc(100% / var(--columns) - var(--gap));
+
+    /* Thêm margin-left để tạo khoảng hở giữa các cột
+    nhưng sẽ bị xuống hàng do 33.33*3 = 99.99 rồi nên phải tính toán lại width */
+    margin-left: var(--gap);
+    height: 90px;
+    margin-top: var(--gap);
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 90px;
+    text-align: center;
+    color: #fff;
+    background-color: #74ebd5;
+    background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+}
+
+/******************** Center layout ********************/
+.center-layout {
+    display: flex;
+    max-width: 640px;
+    height: 360px;
+    margin: 36px auto 0 auto;
+    border-radius: 16px;
+    color: #fff;
+    background-color: #ff3cac;
+    background-image: linear-gradient(225deg,
+            #ff3cac 0%,
+            #784ba0 50%,
+            #2b86c5 100%);
+}
+
+.center-layout .item {
+    /* Để flex-item căn giữa flex-container */
+    margin: auto;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+/******************** Chart layout ********************/
+.chart-layout {
+    display: flex;
+    height: 320px;
+    margin: 36px auto 0 auto;
+    padding: 32px 0;
+    background-color: #fff;
+    align-items: flex-end;
+
+    /* Không bị dư ở đầu và cuối mà chỉ giữa các hàng và giữa các cột thôi*/
+    gap: 8px;
+}
+
+.chart-layout .item {
+    flex: 1;
+    width: 60px;
+    height: var(--percent);
+    padding: 4px 0;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    background-color: #08aeea;
+    background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+}
+
+/******************** End ********************/
+.the-end {
+    display: flex;
+    max-width: 740px;
+    min-height: 360px;
+    margin: 12px auto 48px auto;
+    padding: 32px 0;
+}
+
+.the-end p {
+    margin: 16px 0;
+}
+
+.the-end .first {
+    padding: 4px 16px;
+    background-color: #fff;
+    flex: 1;
+}
+
+.the-end .second {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.the-end .second-one {
+    padding: 4px 16px;
+    background-color: #8ec5fc;
+    flex: 1;
+}
+
+.the-end .second-two {
+    padding: 4px 16px;
+    background-color: #e0c3fc;
+    flex: 1;
+}
