@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #editor {
+        padding: 5px;
+        border: 1px solid #ddd;
+        width: 360px;
+        min-height: 80px;
+      }
+
+      #editor:empty::before {
+        content: attr(placeholder);
+      }
+    </style>
+  </head>
+  <body>
+    <label onclick="editor.focus()">Nội dung</label>
+    <div id="editor" contenteditable placeholder="Nhập nội dung" onclick="console.log(this.innerHTML)"></div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a,
+      button,
+      input,
+      textarea,
+      select {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        --webkit-tap-highlight-color: transparent;
+      }
+
+      .radio {
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        margin-right: 10px;
+        line-height: 21px;
+      }
+
+      .radio input {
+        display: none;
+      }
+
+      .radio::before,
+      .radio::after {
+        display: inline-block;
+        content: "";
+        border-radius: 50%;
+      }
+
+      .radio::before {
+        margin-right: 5px;
+        width: 13px;
+        height: 13px;
+        border: 2px solid #ccc;
+      }
+
+      .radio:has(:checked)::before {
+        border-color: #f05123;
+      }
+
+      .radio:has(:checked)::after {
+        top: 6px;
+        left: 4px;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: #f05123;
+      }
+    </style>
+  </head>
+  <body>
+    <label class="radio">
+      <input type="radio" id="male" name="gender" />
+      Nam
+    </label>
+    <label class="radio">
+      <input type="radio" id="female" name="gender" />
+      Nữ
+    </label>
+  </body>
+</html>

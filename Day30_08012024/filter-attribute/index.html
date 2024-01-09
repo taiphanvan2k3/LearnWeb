@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .chat {
+        position: relative;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        margin: 0 auto;
+        padding: 20px;
+        width: 50%;
+        filter: drop-shadow(0 0 3px #ccc);
+        background: #fff;
+      }
+
+      .chat::after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -38px;
+        border: 20px solid;
+        border-color: #fff transparent transparent;
+      }
+
+      img {
+        filter: brightness(0) saturate(100%) invert(14%) sepia(91%)
+          saturate(6069%) hue-rotate(358deg) brightness(109%) contrast(112%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chat">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nostrum
+      repudiandae, harum repellendus expedita assumenda quas. At tempore fugit
+      voluptatum delectus soluta mollitia, rerum quia! Omnis accusamus
+      distinctio quibusdam at!
+    </div>
+
+    <img
+      src="https://files.fullstack.edu.vn/f8-prod/user_photos/297005/63f48cfecf162.jpg"
+      alt=""
+    />
+  </body>
+</html>
