@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    gap: 30px;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.btn {
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: #fff;
+    background: #5eb9f0;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Dịch button lên trên */
+.btn-1:hover {
+    translate: 0 -15px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Đổi mầu */
+.btn-2:hover {
+    background-color: orange;
+}
+
+/* Button3: chuyển màu từ trái sang */
+/* Button4: chuyển màu từ trái sang khi hover và lost */
+.btn-3,
+.btn-4 {
+    position: relative;
+}
+
+.btn-3 span,
+.btn-4 span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-3:hover::after {
+    width: 100%;
+}
+
+.btn-3::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.3s ease-in;
+    background-color: orange;
+}
+
+.btn-4:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+.btn-4::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.3s ease-in;
+    background-color: orange;
+}

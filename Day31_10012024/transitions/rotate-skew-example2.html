@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+
+      .section {
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-right: 20px;
+      }
+
+      .section::before {
+        content: "";
+        border-radius: 13px;
+        position: absolute;
+        top: -103px;
+        left: -3px;
+        width: 100%;
+        height: 100%;
+        background: blueviolet;
+        z-index: -1;
+        rotate: -7deg;
+      }
+
+      .hero {
+        max-width: 90%;
+        margin: 0 auto;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section">
+      <div class="hero">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, modi
+        hic? Molestiae nemo, in labore quod minima rem eveniet maxime quam
+        dolorem neque delectus explicabo enim, sint molestias inventore sunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+        harum minima odit, a dolore recusandae numquam incidunt aspernatur,
+        officia vel quisquam totam excepturi autem maxime sint, eligendi nihil
+        rem. Veniam?
+      </div>
+    </div>
+  </body>
+</html>

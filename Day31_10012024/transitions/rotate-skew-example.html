@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 80px;
+      }
+
+      .box {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 100px;
+        height: 100px;
+        background: orange;
+        font-size: 30px;
+        font-weight: 600;
+        rotate: 45deg;
+      }
+
+      h1 {
+        rotate: -45deg;
+      }
+
+      .box2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 100px;
+        height: 100px;
+        font-size: 30px;
+        font-weight: 600;
+      }
+
+      .box2::after {
+        rotate: 45deg;
+        z-index: -1;
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 100px;
+        top: 0;
+        left: 0;
+        background: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>F8</h1>
+    </div>
+    <div class="box2">
+      <h2>F8</h2>
+    </div>
+  </body>
+</html>
