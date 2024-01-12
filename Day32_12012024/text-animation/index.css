@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+.text,
+.text2,
+.text3,
+.text4,
+.text5 {
+    font-size: 30px;
+    font-weight: 600;
+    transition: color 0.5s;
+}
+
+.text:hover {
+    color: orange;
+}
+
+
+/* Ví dụ 2 */
+.text2 {
+    display: inline-block;
+    position: relative;
+}
+
+.text2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    color: orange;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+}
+
+.text2:hover::before {
+    width: 100%;
+}
+
+.text3 {
+    display: inline-block;
+    position: relative;
+}
+
+.text3::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    color: orange;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+
+    /* Tư tưởng làm giống button nhưng để căn chữ ra để chữ 
+    không chạy cả cụm khi không hover */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text3:hover::before {
+    left: 0;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.text4 {
+    display: inline-block;
+    position: relative;
+}
+
+.text4::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    color: orange;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.text4:hover::before {
+    height: 100%;
+}
+
+.text5 {
+    display: inline-block;
+    position: relative;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.text5::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    color: orange;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+    display: flex;
+    align-items: flex-end;
+}
+
+.text5:hover::before {
+    top: 0;
+    height: 100%;
+    align-items: flex-start;
+}

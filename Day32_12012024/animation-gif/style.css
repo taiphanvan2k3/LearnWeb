@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gif {
+    width: 135.5px;
+    height: 135.5px;
+    background: url(./facebook-sticker.png);
+
+    /* Dùng step để nhảy thẳng đến các điểm trong animation, bỏ qua transition */
+    animation: run 2s infinite steps(1);
+}
+
+@keyframes run {
+    0% {
+        background-position: -0px -0px;
+    }
+
+
+    6.25% {
+        background-position: -131.5px -0px;
+    }
+
+
+    12.5% {
+        background-position: -263px -0px;
+    }
+
+
+    18.75% {
+        background-position: -394.5px -0px;
+    }
+
+
+    25% {
+        background-position: -0px -131.5px;
+    }
+
+
+    31.25% {
+        background-position: -131.5px -131.5px;
+    }
+
+
+    37.5% {
+        background-position: -263px -131.5px;
+    }
+
+
+    43.75% {
+        background-position: -394.5px -131.5px;
+    }
+
+
+    50% {
+        background-position: -0px -263px;
+    }
+
+
+    56.25% {
+        background-position: -131.5px -263px;
+    }
+
+
+    62.5% {
+        background-position: -263px -263px;
+    }
+
+
+    68.75% {
+        background-position: -394.5px -263px;
+    }
+
+
+    75% {
+        background-position: -0px -394.5px;
+    }
+
+
+    81.25% {
+        background-position: -131.5px -394.5px;
+    }
+
+
+    87.5% {
+        background-position: -263px -394.5px;
+    }
+
+
+    93.75% {
+        background-position: -394.5px -394.5px;
+    }
+
+
+    100% {
+        background-position: 0 0;
+    }
+}

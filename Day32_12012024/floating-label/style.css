@@ -1,0 +1,54 @@
+:root {
+    --primary-color: blueviolet;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-text {
+    position: relative;
+}
+
+input {
+    width: 230px;
+    font-family: inherit;
+    outline: none;
+}
+
+.input-text input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.5s, background-color 0.2s;
+}
+
+.input-text input:focus {
+    border-color: blueviolet;
+}
+
+
+.input-text input:focus+label {
+    color: var(--primary-color);
+}
+
+.input-text input:focus+label,
+.input-text input:not(:placeholder-shown)+label {
+    top: -27%;
+
+    /* Trích tăng độ dài cho chữ */
+    text-shadow: -0.1px -0.1px currentColor, 0.1px 0.1px currentColor;
+}
+
+.input-text label {
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    padding: 0 5px;
+    transition: top 0.5s, color 0.5s;
+    background: #fff;
+    pointer-events: none;
+}
