@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple Editor</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                height: 100vh;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 20px;
+                padding: 24px;
+                height: 100%;
+            }
+
+            .editor:focus-visible {
+                outline: none;
+                border: 1px solid gray;
+            }
+
+            .browser,
+            .editor {
+                border: 2px solid #ccc;
+            }
+
+            .browser {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Code editor -->
+            <textarea
+                name=""
+                id="editor"
+                class="editor"
+                cols="30"
+                rows="10"
+            ></textarea>
+
+            <!-- Browser -->
+            <div>
+                <iframe
+                    title="simple editor"
+                    src=""
+                    class="browser"
+                    id="browser"
+                ></iframe>
+            </div>
+        </div>
+
+        <script>
+            const editor = document.getElementById("editor");
+            const browser = document.getElementById("browser");
+
+            const bodyOfBrowser = browser.contentDocument.querySelector("body");
+            bodyOfBrowser.style.backgroundColor = "black";
+            bodyOfBrowser.style.color = "green";
+            bodyOfBrowser.style.margin = "0";
+
+            editor.oninput = function (e) {
+                browser.srcdoc = `
+                    <!DOCTYPE html>
+                    <html lang="en">
+                        <head>
+                            <meta charset="UTF-8" />
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                            <title>Document</title>
+                            <link rel="stylesheet" href="./style.css">
+                            
+                        </head>
+                        <body>
+                            ${e.target.value}
+                        </body>
+                    </html>
+                `;
+            };
+        </script>
+    </body>
+</html>
