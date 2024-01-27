@@ -1,0 +1,15 @@
+/* Tạo 1 container có kích thước tỉ lệ 16:9 */
+.container {
+    position: relative;
+    width: 75%;
+
+    /* Căn theo chiều rộng của thẻ cha */
+    padding-top: 42.1875%;
+    background-color: #000;
+}
+
+.container .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

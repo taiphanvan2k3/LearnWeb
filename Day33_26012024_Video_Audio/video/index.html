@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Poster: đặt thumbnail cho audio -->
+    <video
+      id="video"
+      width="50%"
+      controls
+      preload="auto"
+      poster="../assets/maxresdefault.jpg"
+      autoplay
+      onloadstart="this.volume=0.2"
+    >
+      <source src="../assets/ytb.mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <script>
+      document.addEventListener(
+        "click",
+        () => {
+          const audio = document.getElementById("video");
+          if (audio) {
+            audio.play();
+          }
+        },
+        { once: true }
+      );
+    </script>
+  </body>
+</html>

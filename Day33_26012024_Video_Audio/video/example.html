@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Thêm thuộc tính playsinline để trên các hệ điều hành như IOS sẽ mở video đó full màn hình -->
+    <div class="container">
+      <video
+        width="100%"
+        class="video"
+        src="../assets/ytb.mp4"
+        controls
+        onloadstart="this.volume=0.2"
+        poster="../assets/maxresdefault.jpg"
+        playsinline
+        ></video>
+    </div>
+  </body>
+</html>
